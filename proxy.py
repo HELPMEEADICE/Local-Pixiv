@@ -10,12 +10,12 @@ proxies = {
 }
 
 # 根目录
-base_directory = 'D:/pixiv_image'
+base_directory = 'your directory'
 
 @app.route('/', methods=['GET'])
 def root():
     # 如果URL是根目录，返回指定的字符串，设置Content-Type为text/html
-    response_text = '<p style="font-family: Arial;">HELPMEEADICE的Pixiv图片反代服务器</p>'
+    response_text = '<p style="font-family: Arial;">Pixiv图片反代服务器</p>'
     return Response(response_text, status=200, content_type='text/html;charset=UTF-8')
 
 @app.route('/<path:subpath>', methods=['GET'])
