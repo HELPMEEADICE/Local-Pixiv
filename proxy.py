@@ -39,7 +39,7 @@ conn.close()
 
 @app.route('/', methods=['GET'])
 def root():
-    response_text = '<p style="font-family: Arial;">Pixiv image proxy & backup v1.1.2</p>'
+    response_text = '<p style="font-family: Arial;">Pixiv image proxy & backup v2.1</p>'
     return Response(response_text, status=200, content_type='text/html;charset=UTF-8')
 
 @app.route('/<path:path>', methods=['GET'])
